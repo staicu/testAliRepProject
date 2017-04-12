@@ -1,0 +1,13 @@
+﻿<Application x:Class="test.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ObjectDataProvider x:Key="dateTimeKindValues" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="sys:DateTimeKind"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Application.Resources>
+</Application>
